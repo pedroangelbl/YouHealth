@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="/css/producto.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/img/logopng.png" alt="logo"></a>
+        </div>
+        <div class="barra_busqueda">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="cuenta_carrito">
+            <a href="/html/register.html">Cuenta</a>
+            <a href="#">Carrito</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/html/store.html">Nutrición</a></li>
+            <li><a href="#">Proteína</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Salud y bienestar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <section id="pagina-producto">
+            <article class="foto-producto">
+                <img src="/img/ImpactWheyIsolate.jpg" alt="">
+            </article>
+            <article class="seccion-producto">
+                <h2>IMPACT WHEY ISOLATE</h2>
+                <h3><em>11,99$</em></h3>
+
+                <div id="seccion">
+                    <label for="sabor"><h4>Sabor:</h4></label>
+                    <select name="sabor">
+                        <option value="1">limón</option>
+                        <option value="2">cacahuete</option>
+                        <option value="3">chocolate</option>
+                        <option value="4">vainilla</option>
+                    </select>
+                </div>
+
+                <div id="seccion">
+                    <label for="cantidad"><h4>Cantidad:</h4></label>
+
+                    <div class="opciones-cantidad">
+                        <input type="radio" id="1kg" name="cantidad" value="1kg">
+                        <label for="1kg">1 Kg</label>
+
+                        <input type="radio" id="100g" name="cantidad" value="100g" checked>
+                        <label for="100g">100g</label>
+
+                        <input type="radio" id="250g" name="cantidad" value="250g">
+                        <label for="250g">250g</label>
+
+                        <input type="radio" id="500g" name="cantidad" value="500g">
+                        <label for="500g">500g</label>
+                    </div>
+                </div>
+
+                <div id="seccion">
+                    <label for="unidades"><h4>Unidades:</h4></label>
+                    <input type="number" id="unidades" name="unidades" value="1" min="1">
+                </div>
+
+                <hr>
+
+                <div id="seccion">
+                    <h3>Descripción del producto</h3>
+                    <p>Si buscas la mayor calidad y pureza en tus batidos de proteína, no busques más: te presentamos
+                        Impact Whey Isolate.
+
+                        El riguroso método de filtrado al que se somete nuestra Impact Whey Protein, la corona como uno
+                        de nuestros complementos más puros, con un mayor aporte de proteína, menos azúcares y cero
+                        grasas*. ¿Qué más se le puede pedir? Cada ración* diaria te aporta 23 g de proteína para esos
+                        momentos en los que te hace falta un toque extra</p>
+                </div>
+
+                <div id="seccion">
+                    <button>Comprar</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>YouHealth</h2>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Visítanos</h3>
+                <p>Av. Aeropuerto, 123<br>Ciudad Jardín<br>Córdoba, Córdoba</p>
+            </div>
+            <div class="footer-section">
+                <h3>Llamanos</h3>
+                <p>666 12 34 56</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces de interés</h3>
+                <p>
+                    Instagram - <a href="#">Enlace</a><br>
+                    FaceBook - <a href="#">Enlace</a><br>
+                    Twitter - <a href="#">Enlace</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="copy">
+        <h4>2024 YouHealth - Todos los derechos reservados</h4>
+    </div>
+</body>
+
+</html>
