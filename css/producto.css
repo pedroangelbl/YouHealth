@@ -95,6 +95,10 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
+#seccion p{
+    text-align: justify;
+}
+
 select,input{
     padding: 10px;
 }
@@ -110,11 +114,6 @@ button{
     color: #FFF9EB;
     border-radius: 5px;
 }
-
-p{
-    text-align: justify;
-}
-
 
 
 /* Footer */
