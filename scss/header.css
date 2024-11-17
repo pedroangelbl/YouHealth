@@ -1,0 +1,6 @@
+@charset "UTF-8";
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}/*# sourceMappingURL=header.css.map */

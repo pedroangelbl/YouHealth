@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="icon" type="image/x-icon" href="../img/logo.ico">
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../scss/custom.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+    <script src="../node_modules/@popperjs/core/dist/esm/popper.js" defer></script>
+    <link rel="shortcut icon" href="../media/img/logo.ico" type="image/x-icon">
+    <title>Registro</title>
 </head>
 
-<body>
-
-    <!-- Header -->
+<body class="bg-primary">
+    <!-- ESTO ES LA CABECERA -->
     <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../img/logopng.png" alt="logo"></a>
+        <div class="bg-secondary px-3 py-2 text-bg-dark border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="../index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <img src="../media/img/logopng.png" width="220" class="bi me-2 img-fluid" role="img" aria-label="Bootstrap">
+            </a>
+            </div>
         </div>
-        <div class="cuenta_carrito">
-            <a href="../html/register.html">Cuenta</a>
-            <a href="#">Carrito</a>
         </div>
     </header>
 
-    <!-- Main -->
+    <!-- ESTO ES EL MAIN -->
     <main>
         <section id="registro_rapido">
             <h2>Tus datos</h2>
@@ -73,6 +76,6 @@
             </h4>
         </section>
     </main>
-</body>
 
+</body>
 </html>
