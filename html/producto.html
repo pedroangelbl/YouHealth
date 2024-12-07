@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-tertiary">
+                        <a href="checkout.html" class="nav-link text-tertiary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
                             <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1"/>
                             </svg>
@@ -59,7 +59,7 @@
                 <a class="nav-link text-white" href="store.html">Snacks</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="store.html">Ropa</a>
+                <a class="nav-link text-white" href="store_ropa.html">Ropa</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="store.html">Accesorios</a>
@@ -72,83 +72,87 @@
 </header>
 
 <!-- ESTO ES EL MAIN -->
-<main class="container py-4">
-    <div class="row justify-content-center">
-        <section class="col-12 col-sm-5 flex flex-column m-5">
-            <div>
-                <img src="../media/img/CreatinaMonohidratoPolvo.jpg" width="100%" alt="Creatina monohidrato en polvo">
-            </div>
-            <hr>
-            <div class="flex flex-column">
-                <h3>Descripción del producto</h3>
-                <p>La creatina monohidrato es una de las formas de creatina más investigadas del mundo, y se ha probado científicamente que nuestro producto en polvo de impactante calidad aumenta el rendimiento físico al mejorar la potencia general.</p>
-            </div>
-        </section>
-
-        <section class="col-12 col-sm-5 flex flex-column m-5">
-            <h1>Creatina monohidrato en polvo</h1>
-            <h3>9,99$</h3>
-            <br>
-
-            <div class="row">
-                <label for="sabor">
-                    <h4>Sabor:</h4>
-                </label>
-                <select name="sabor">
-                    <option value="1">limón</option>
-                    <option value="2">cacahuete</option>
-                    <option value="3">chocolate</option>
-                    <option value="4">vainilla</option>
-                </select>
-            </div>
-            <br>
-
-            <div>
-                <label for="cantidad">
-                    <h4>Cantidad:</h4>
-                </label>
-
-                <div class="opciones-cantidad">
-                    <input type="radio" id="1kg" name="cantidad" value="1kg">
-                    <label for="1kg">1 Kg</label>
-
-                    <input type="radio" id="100g" name="cantidad" value="100g" checked>
-                    <label for="100g">100g</label>
-
-                    <input type="radio" id="250g" name="cantidad" value="250g">
-                    <label for="250g">250g</label>
-
-                    <input type="radio" id="500g" name="cantidad" value="500g">
-                    <label for="500g">500g</label>
+<main class="container py-5">
+    <div class="row g-5">
+        <!-- Imagen del producto -->
+        <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow">
+                <img src="../media/img/CreatinaMonohidratoPolvo.jpg" class="card-img-top img-fluid" alt="Creatina monohidrato en polvo">
+                <div class="card-body">
+                    <h5 class="card-title">Descripción del producto</h5>
+                    <p class="card-text">La creatina monohidrato es una de las formas de creatina más investigadas del mundo, y se ha probado científicamente que nuestro producto en polvo de impactante calidad aumenta el rendimiento físico al mejorar la potencia general.</p>
                 </div>
             </div>
+        </div>
+
+        <!-- Información del producto -->
+        <div class="col-12 col-lg-6">
+            <h1 class="fw-bold">Creatina monohidrato en polvo</h1>
+            <h3 class="text-success">$9.99</h3>
             <hr>
-
-            <div class="row">
-                <label for="unidades">
-                    <h4>Unidades:</h4>
-                </label>
-                <input type="number" id="unidades" name="unidades" value="1" min="1">
+            
+            <!-- Selección de sabor -->
+            <div class="mb-4">
+                <label for="sabor" class="form-label"><h5>Sabor:</h5></label>
+                <select name="sabor" id="sabor" class="form-select">
+                    <option value="1">Limón</option>
+                    <option value="2">Cacahuete</option>
+                    <option value="3">Chocolate</option>
+                    <option value="4">Vainilla</option>
+                </select>
             </div>
-            <br>
 
-            <div class="row">
-                <button>Comprar</button>
+            <!-- Selección de cantidad -->
+            <div class="mb-4">
+                <h5>Cantidad:</h5>
+                <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                        <input type="radio" id="1kg" name="cantidad" value="1kg" class="form-check-input">
+                        <label for="1kg" class="form-check-label">1 Kg</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="100g" name="cantidad" value="100g" class="form-check-input" checked>
+                        <label for="100g" class="form-check-label">100g</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="250g" name="cantidad" value="250g" class="form-check-input">
+                        <label for="250g" class="form-check-label">250g</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="500g" name="cantidad" value="500g" class="form-check-input">
+                        <label for="500g" class="form-check-label">500g</label>
+                    </div>
+                </div>
             </div>
-        </section>
-        <hr>
-        <section class="col-12 col-sm-5">
-            <div class="row">
-                <h1 class="col-12 text-center">Cómo tomar creatina</h1>
-                <video class="col-12" width="640" height="360" controls>
-                    <source src="../media/tomar_creatina.mp4">
+
+            <!-- Selección de unidades -->
+            <div class="mb-4">
+                <label for="unidades" class="form-label"><h5>Unidades:</h5></label>
+                <input type="number" id="unidades" name="unidades" value="1" min="1" class="form-control w-50">
+            </div>
+            
+            <!-- Botón de compra -->
+            <div>
+                <a href="checkout.html"><button class="btn btn-primary w-100 fw-bold bg-tertiary text-white">Comprar</button></a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Sección de video -->
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+            <h2 class="text-center mb-4">Cómo tomar creatina</h2>
+            <div class="ratio ratio-16x9">
+                <video controls>
+                    <source src="../media/tomar_creatina.mp4" type="video/mp4">
                 </video>
             </div>
-        </section>
-        
+        </div>
     </div>
-    
 </main>
+
 
 
 <!-- ESTO ES EL FOOTER -->
