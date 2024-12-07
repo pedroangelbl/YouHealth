@@ -42,4 +42,6 @@ $theme-colors: map-merge($theme-colors, (
 // 8. Add additional custom code here
 
 @import "../scss/more.scss";
+@import "../scss/slider.scss";
+@import "../scss/login_register.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
